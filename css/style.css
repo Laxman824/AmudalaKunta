@@ -10,12 +10,21 @@ body a {
   -moz-transition: 0.5s all;
   -ms-transition: 0.5s all;
 }
-.banner{
-  background: url(../images/banner.jpg) no-repeat 0px 0px #eeece9;
-  min-height: 855px;
-  background-size: cover;
-  position: relative;
-}
+.banner {
+	/* Replace 'image1.jpg' and 'image2.jpg' with your actual image URLs */
+	background-image: url('../images/banner.jpg'),url('../slideshow/sky.jpg'),url('../slideshow/paddy.jpg');
+	background-repeat: no-repeat, repeat; /* Specify the repeat behavior for each image */
+	background-position: center top, left bottom; /* Set the position for each image */
+	background-size: cover; /* Adjust the size of the background images */
+	min-height: 855px;
+	position: relative;
+	transition: background-image 2s ease-in-out;
+  }
+  .banner:hover {
+	/* Replace 'image3.jpg' and 'image4.jpg' with other image URLs for hover effect */
+	background-image: url('../slideshow/sky.jpg'), url('../images/banner.jpg'),url('../slideshow/paddy.jpg');
+	animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
 .button {
 	border: none;
 	color: white;
