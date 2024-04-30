@@ -11,7 +11,7 @@ body a {
   -ms-transition: 0.5s all;
 }
 .banner {
-	/* Replace 'image1.jpg' and 'image2.jpg' with your actual image URLs */
+	
 	background-image: url('../images/banner.jpg'),url('../slideshow/sky.jpg'),url('../slideshow/paddy.jpg');
 	background-repeat: no-repeat, repeat; /* Specify the repeat behavior for each image */
 	background-position: center top, left bottom; /* Set the position for each image */
